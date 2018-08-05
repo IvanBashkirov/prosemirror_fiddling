@@ -1,3 +1,4 @@
+
 .ProseMirror {
   position: relative;
 }
@@ -164,7 +165,6 @@ li.ProseMirror-selectednode:after {
   color: #666;
   padding: 1px 6px;
   top: 0; left: 0; right: 0;
-  border-bottom: 1px solid silver;
   background: white;
   z-index: 10;
   -moz-box-sizing: border-box;
@@ -178,7 +178,20 @@ li.ProseMirror-selectednode:after {
   vertical-align: -2px; /* Compensate for padding */
   padding: 2px 8px;
   cursor: pointer;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
+.ProseMirror-icon:hover {
+  background: #ddd;
+}
+
 
 .ProseMirror-menu-disabled.ProseMirror-icon {
   cursor: default;
@@ -300,7 +313,8 @@ li.ProseMirror-selectednode:after {
   margin-top: 5px;
   display: none;
 }
-#editor, .editor {
+
+#editor {
   background: white;
   color: black;
   background-clip: padding-box;
@@ -308,6 +322,7 @@ li.ProseMirror-selectednode:after {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 5px 0;
   margin-bottom: 23px;
+  width: 400px;
 }
 
 .ProseMirror p:first-child,
@@ -327,3 +342,5 @@ li.ProseMirror-selectednode:after {
 }
 
 .ProseMirror p { margin-bottom: 1em }
+
+
